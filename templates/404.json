@@ -1,10 +1,29 @@
 {
   "sections": {
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "settings": {
+      }
+    },
+    "163393849376fa31e0": {
+      "type": "demo",
+      "settings": {
+        "title": "Sorry, Page Not Found",
+        "text": "",
+        "button_link": "",
+        "button_label": "ボタン"
+      }
+    },
+    "163393837437ab40ab": {
+      "type": "image_round",
+      "settings": {
+        "image_round": "shopify:\/\/shop_images\/pose_syazai_sliding_dogeza_man.png"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "163393849376fa31e0",
+    "163393837437ab40ab"
   ]
 }

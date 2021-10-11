@@ -1,12 +1,7 @@
 <section>
-  <div>
-      {%- assign img_url = section.settings.image | img_url: "master" -%}
-      <img width='' height='' src="{{ img_url }}">
-  </div>
-  <div>
-      <h3>{{ section.settings.title | escape }}</h3>
+  <div style='text-align:center'>
+  　　　<h3>{{ section.settings.title | escape }}</h3>
       <p>{{ section.settings.text }}</p>
-      <a href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>
   </div>
 </section>
 
@@ -18,13 +13,13 @@
       "type": "text",
       "id": "title",
       "label": "見出し",
-      "default": "見出しサンプル"
+      "default": "近日中にセール公開"
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "テキスト",
-      "default": "テキストサンプルテキストサンプルテキストサンプルテキスト"
+      "default": "テスト"
     },
     {
       "type": "image_picker",

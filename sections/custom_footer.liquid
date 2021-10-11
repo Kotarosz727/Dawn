@@ -1,0 +1,51 @@
+<footer class="site-footer small--text-center" role="contentinfo">
+  <div class="wrapper">
+    <div class="grid-wrapper">
+      {% for block in section.blocks %}
+            <div class="grid_item">
+              <h3 class="h4">{{ block.settings.title }}</h3>
+              <div class="rte">{{ block.settings.richtext }}</div>
+            </div>
+      {% endfor %}
+    </div>
+  </div>
+</footer>
+{% schema %}
+  {
+    "name": "Footer",
+    "max_blocks": 6,
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "About Us"
+          },
+          {
+            "type": "richtext",
+            "id": "richtext",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+     {
+       "name": "カスタムフッター",
+       "category": "mysections"
+     }
+    ]
+  }
+{% endschema %}
+{% stylesheet %}
+  .grid-wrapper {
+    display: flex;
+  },
+  .grid-item{
+  	display:flex;
+  }
+{% endstylesheet %}

@@ -22,6 +22,13 @@
             "text_style": "subtitle"
           }
         },
+        "fdefd649-e599-470b-9e5f-f7bf41ff483b": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.my_fields.product_sub_title.value }}",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -60,6 +67,7 @@
         "vendor",
         "title",
         "subtitle",
+        "fdefd649-e599-470b-9e5f-f7bf41ff483b",
         "price",
         "variant_picker",
         "quantity_selector",

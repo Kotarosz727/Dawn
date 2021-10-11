@@ -1,0 +1,36 @@
+<div>
+   
+  <img id='image-round' style='border-radius: 50%; display: block; margin-left: auto; margin-right: auto ' src="{{section.settings.image_round | img_url: '500x500'}}">
+</div> 
+
+{% schema %}
+  {
+    "name": "image_round",
+    "settings": [
+        {
+        "type": "image_picker",
+        "id": "image_round",
+        "label": "画像",
+        "info": "画像"
+      }
+    ],
+    "presets": [
+      {
+       "name": "image_round",
+       "category": "mysections"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+　　.image_round{
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto 
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

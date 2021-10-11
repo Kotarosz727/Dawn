@@ -1,10 +1,22 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1633938202e06cea44": {
+      "type": "demo",
+      "settings": {
+        "title": "近日中にセール公開",
+        "text": "",
+        "button_link": "",
+        "button_label": "ボタン"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1633938202e06cea44"
   ]
 }

@@ -1,0 +1,26 @@
+<section>
+  　<h4>{{ section.settings.title | escape }}</h４>
+    {%- for product in collections.products -%}
+  		<p>{{ product }}</p>
+  	{%- endfor -%}
+</section> 
+
+{% schema %}
+  {
+    "name": "全商品",
+    "settings": [
+      {
+          "type": "text",
+          "id": "title",
+          "label": "見出し",
+          "default": "test"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
